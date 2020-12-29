@@ -103,9 +103,7 @@ declare module "single-spa" {
     config: RegisterApplicationConfig<T>
   ): void;
 
-  export function unregisterApplication(
-    appName: string,
-  ): Promise<any>;
+  export function unregisterApplication(appName: string): Promise<any>;
 
   export function getMountedApps(): string[];
 
